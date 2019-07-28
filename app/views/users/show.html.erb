@@ -1,0 +1,9 @@
+<h1>Welcome, <%= current_user.name %>!</h1>
+<%= link_to "Log out", logout_path %>
+<%= link_to "Home", root_path %>
+
+<div id="messages">
+  <p> Your Messages</p>
+  <%=render @messages%>
+  
+<div>
