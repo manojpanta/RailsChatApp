@@ -18,21 +18,13 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+gem 'jquery-rails'
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-gem 'devise'
-gem "auto_html"
-gem 'acts_as_votable', '~> 0.10.0'
-gem 'faker'
-gem "font-awesome-rails"
-gem 'bourbon'
-gem 'neat'
-gem 'refills'
-gem "normalize-rails"
-gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'rb-readline'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -46,14 +38,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'rspec-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails', '~> 3.0.0'
-  gem 'factory_girl_rails'
-  gem 'database_cleaner'
-  gem 'shoulda-matchers'
 end
 
 group :development do
